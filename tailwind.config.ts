@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         primary: `var(--primary)`,
+        footerBg: `var(--footerBg)`,
       },
     },
   },
