@@ -2,7 +2,7 @@ export const NavLinks = [
     {
         id: 1,
         title: "Our Mission",
-        link: "#",
+        link: "/mission",
     },
     {
         id: 2,
@@ -11,7 +11,7 @@ export const NavLinks = [
         subMenu: [
             {
                 title: "Meet The Team",
-                link: "#",
+                link: "/team",
             },
             {
                 title: "Zakaat",

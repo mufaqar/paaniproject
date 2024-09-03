@@ -13,7 +13,7 @@ export default function Mission() {
                 video="https://www.youtube.com/watch?v=sffISGgvyPc" />
             <section className='py-7 bg-footerBg'>
                 <div className='container max-w-[940px] mx-auto px-4'>
-                    <h2 className='md:text-[30px] md:leading-normal text-2xl font-bold text-white mb-4'>
+                    <h2 className='md:text-[30px] md:leading-normal text-2xl font-bold text-white text-center mb-4'>
                         Our Story
                     </h2>
                     <p className='text-sm font-normal text-white mb-4'>
