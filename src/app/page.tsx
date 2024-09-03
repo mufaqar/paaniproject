@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <Banner />
-      <section className={`md:py-10 pt-5 pb-5 bg-[url('/images/counter-1.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/70`}>
+      <section className={`md:py-10 pt-5 pb-5 bg-[url('/images/counter-1.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/60`}>
         <div className="container mx-auto px-4 grid md:grid-cols-4 grid-cols-1 gap-5 items-center">
           <Counter
             icon="/images/well.webp"
@@ -33,7 +33,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className={`md:py-[170px] pt-20 pb-20 bg-[url('/images/eid-bg.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/70`}>
+      <section className={`md:py-[170px] pt-20 pb-20 bg-[url('/images/eid-bg.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/60`}>
         <div className="container mx-auto px-4">
           <h2 className="md:text-[39px] md:leading-normal text-2xl font-bold text-white text-center mb-4">
             2024 Eid al-Adha
@@ -70,7 +70,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="md:py-[70px] pt-10 pb-10 bg-[url('/images/philosophy.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/70">
+      <section className="md:py-[70px] pt-10 pb-10 bg-[url('/images/philosophy.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/60">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-white text-center">
             Our Philosophy
@@ -114,6 +114,24 @@ export default function Home() {
             link="#"
             Cstm_class="md:flex-row-reverse"
           />
+        </div>
+      </section>
+      <section className="md:pt-[206px] md:pb-[116px] pt-10 pb-10 bg-[url('/images/cta.webp')] bg-fixed bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/60">
+        <div className="container max-w-[780px] mx-auto px-4">
+          <h2 className="md:text-[38px] md:leading-normal text-2xl font-bold text-white text-center mb-4">
+            The Ripple Effect Starts with You
+          </h2>
+          <p className="text-base font-normal text-white text-center">
+            As we fight Pakistan’s water crisis, let us utilize our resources to maximize the positive impact we can have on impoverished and underserved communities. Take the first step today with the Paani Project.
+          </p>
+          <div className="flex flex-row gap-4 w-fit mx-auto mt-5">
+            <Link href="#" className='text-base text-white font-semibold bg-primary px-4 py-2.5 rounded inline-flex'>
+              Volunteer
+            </Link>
+            <Link href="#" className='text-base text-white font-semibold bg-primary px-4 py-2.5 rounded inline-flex'>
+              Donate Now
+            </Link>
+          </div>
         </div>
       </section>
     </main>
