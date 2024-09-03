@@ -8,7 +8,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <Banner />
+      <Banner
+        img="home.webp"
+        title="Paani Project"
+        subtitle="Transparent • Fast • Trustworthy"
+        content="A global nonprofit fueled by young volunteers to supply clean water & foster empowerment across Pakistan."
+        video="https://www.youtube.com/embed/8pvSZ_JSUhM" />
       <section className={`md:py-10 pt-5 pb-5 bg-[url('/images/counter-1.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/60`}>
         <div className="container mx-auto px-4 grid md:grid-cols-4 grid-cols-1 gap-5 items-center">
           <Counter
