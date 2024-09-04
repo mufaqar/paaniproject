@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --primary: #3895d3;
+  --primary: #145da0;
   --footerBg: #222222;
-  --background-end-rgb: 255, 255, 255;
+  --mainBg: #f4faff;
+  --secondryBg: #e8f3fe;
+  --navlink: #212429;
 }
 
 body {
@@ -18,4 +20,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.primaryBtn {
+  @apply text-lg text-white font-semibold bg-primary hover:bg-transparent hover:text-primary border-2 border-primary px-[60px] py-4 rounded-full transition-all duration-300;
+}
+
+.secondryBtn {
+  @apply text-lg text-primary font-semibold bg-transparent hover:bg-primary hover:text-white border-2 border-primary px-[60px] py-4 rounded-full transition-all duration-300;
+}
+
+.subTitle {
+  @apply text-xl font-normal text-primary uppercase;
 }

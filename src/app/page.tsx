@@ -4,41 +4,126 @@ import GridBox from "@/components/home/gridBox";
 import ReportBox from "@/components/home/reportBox";
 import Image from "next/image";
 import Link from "next/link";
+import { ReliefData } from '@/const/relief'
+import Countdown from "@/components/mission/countdown";
+import FaqBox from "@/components/home/faqBox";
+import { FaqsData } from '@/const/faqs'
 
 export default function Home() {
   return (
     <main>
       <Banner
-        img="home.webp"
         title="Paani Project"
-        subtitle="Transparent • Fast • Trustworthy"
-        content="A global nonprofit fueled by young volunteers to supply clean water & foster empowerment across Pakistan."
-        video="https://www.youtube.com/embed/8pvSZ_JSUhM" />
-      <section className={`md:py-10 pt-5 pb-5 bg-[url('/images/counter-1.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/60`}>
-        <div className="container mx-auto px-4 grid md:grid-cols-4 grid-cols-1 gap-5 items-center">
-          <Counter
-            icon="/images/well.webp"
-            value="20,204"
-            title="Wells Built"
-          />
-          <Counter
-            icon="/images/meal.webp"
-            value="2.5"
-            title="Million Meals Provided"
-          />
-          <Counter
-            icon="/images/globe.webp"
-            value="5"
-            title="Active Projects"
-          />
-          <Counter
-            icon="/images/heart.webp"
-            value="1.7"
-            title="Million Lives Changed"
-          />
+        subtitle="Making a difference, one well at a time."
+        links={<>
+          <Link href="#" className='primaryBtn'>
+            Build your well today
+          </Link>
+          <Link href="#" className='secondryBtn'>
+            Start a Campaign
+          </Link>
+        </>} />
+      <section className="md:py-20 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 items-center justify-between">
+            <div className="max-w-[410px]">
+              <h3 className="subTitle">
+                ABOUT US
+              </h3>
+              <h2 className="md:text-5xl text-3xl font-bold text-primary mt-5">
+                Building Wells, Saving Lives
+              </h2>
+            </div>
+            <div className="max-w-[410px]">
+              <p className="text-lg font-normal text-primary">
+                Our mission is to not only provide temporary relief where we can, but to work towards building permanent solutions against the most complex problems
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      <section className={`md:py-[170px] pt-20 pb-20 bg-[url('/images/eid-bg.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/60`}>
+      <section className="py-8">
+        <div className="container mx-auto px-4 bg-secondryBg md:py-20 py-16 rounded-[100px]">
+          <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 items-center justify-between">
+            <div className="max-w-[410px]">
+              <h3 className="subTitle">
+                OUR INITIATIVES
+              </h3>
+              <h2 className="md:text-5xl text-3xl font-bold text-primary mt-5">
+                Bears, Beets, Battlestar Galactica
+              </h2>
+            </div>
+            <div className="max-w-[410px]">
+              <p className="text-lg font-normal text-primary">
+                Our mission is to not only provide temporary relief where we can, but to work towards building permanent solutions against the most complex problems
+              </p>
+            </div>
+          </div>
+          <div className="max-w-[920px] mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-28 gap-5 md:mt-16 mt-9">
+            {ReliefData?.map((item, idx) => {
+              return <div key={idx} className="flex flex-col gap-5">
+                <h3 className="md:text-[22px] md:leading-[28px] text-xl font-bold text-primary">
+                  {item?.title}
+                </h3>
+                <div className="rounded-xl">
+                  <Image src={item?.img} alt="img" width={1236} height={594} className="w-full h-full object-cover rounded-xl" />
+                </div>
+                <p className="text-lg font-normal text-primary">
+                  {item?.content}
+                </p>
+                <Link href={item?.link} className="text-lg font-normal text-primary underline hover:no-underline transition-all duration-300">
+                  Learn More
+                </Link>
+              </div>
+            })}
+          </div>
+        </div>
+      </section>
+      <section className="py-8">
+        <div className="container mx-auto px-4 bg-navlink md:py-20 py-16 rounded-[100px]">
+          <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 items-center justify-between">
+            <div className="">
+              <h2 className="md:text-5xl text-3xl font-bold text-white mt-5">
+                Pakistan is predicted to reach extreme water shortages by 2025
+              </h2>
+            </div>
+            <div className="">
+              <p className="text-lg font-normal text-white">
+                In present day, only 1 in 5 people have access to clean drinking water. The other 60% are forced to resort to digesting water that has been contaminated with a mixture of sewage and pesticides
+              </p>
+            </div>
+          </div>
+          <div className="max-w-[920px] mx-auto md:mt-16 mt-9">
+            <Countdown />
+          </div>
+        </div>
+      </section>
+      <section className="md:py-20 py-16">
+        <div className="container max-w-[920px] mx-auto px-4">
+          <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 items-center justify-between">
+            <div className="max-w-[410px]">
+              <h3 className="subTitle">
+                FREQUENTLY ASKED QUESTIONS
+              </h3>
+              <h2 className="md:text-5xl text-3xl font-bold text-primary mt-5">
+                Find out more about Paani.
+              </h2>
+            </div>
+            <div className="max-w-[410px]">
+              <p className="text-lg font-normal text-primary">
+                For questions, comments, or concerns, please contact us.
+              </p>
+            </div>
+          </div>
+          <div className="max-w-[920px] mx-auto md:mt-16 mt-9 flex flex-col gap-7">
+            {FaqsData?.map(( item, idx ) => {
+              return <FaqBox key={idx} data={item} />
+            })}
+
+          </div>
+        </div>
+      </section>
+      {/* <section className={`md:py-[170px] pt-20 pb-20 bg-[url('/images/eid-bg.webp')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/60`}>
         <div className="container mx-auto px-4">
           <h2 className="md:text-[39px] md:leading-normal text-2xl font-bold text-white text-center mb-4">
             2024 Eid al-Adha
@@ -138,7 +223,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

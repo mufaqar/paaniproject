@@ -16,6 +16,9 @@ const config: Config = {
       colors: {
         primary: `var(--primary)`,
         footerBg: `var(--footerBg)`,
+        mainBg: `var(--mainBg)`,
+        navlink: `var(--navlink)`,
+        secondryBg: `var(--secondryBg)`,
       },
     },
   },

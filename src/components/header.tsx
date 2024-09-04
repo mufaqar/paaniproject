@@ -15,7 +15,7 @@ const Header = () => {
     };
 
     return (
-        <header className='py-4 md:bg-transparent bg-black relative z-50'>
+        <header className='py-4 relative z-50'>
             <div className='container mx-auto px-4 flex flex-row gap-5 items-center justify-between'>
                 <div>
                     <Link href="/" className='inline-block'>
@@ -23,25 +23,25 @@ const Header = () => {
                     </Link>
                 </div>
                 <nav>
-                    <button onClick={() => setMenu(!menu)} className='md:hidden block text-white py-1.5 px-4'>
+                    <button onClick={() => setMenu(!menu)} className='md:hidden block text-black py-1.5 px-4'>
                         {menu ? <AiOutlineClose size={24} /> : <FaBars size={24} />}
                     </button>
                     <ul
-                        className={`flex md:flex-row flex-col gap-5 md:items-center md:bg-transparent bg-black md:static absolute transition-all duration-700 md:h-fit md:w-fit md:p-0 p-5 h-screen w-3/4 ${menu ? "top-20 left-0" : "-left-[200%]"} `}
+                        className={`flex md:flex-row flex-col md:gap-11 gap-5 md:items-center md:static absolute transition-all duration-700 md:h-fit md:w-fit md:p-0 p-5 h-screen w-3/4 md:bg-transparent bg-white ${menu ? "top-20 left-0" : "-left-[200%]"} `}
                     >
                         {NavLinks.map((item, idx) => (
                             <li key={idx} className=''>
-                                <Link href={item?.link || "#"} className='text-base text-white hover:text-white/70 font-semibold inline-block items-center gap-1.5 relative'>
+                                <Link href={item?.link || "#"} className='text-xl text-navlink hover:text-primary hover:font-semibold font-normal inline-block items-center gap-1.5 relative transition-all duration-300'>
                                     {item?.title}
                                 </Link>
-                                {item?.subMenu && (
+                                {/* {item?.subMenu && (
                                     <FaChevronDown
                                         className={`text-white cursor-pointer inline ml-1.5 ${dropdown === item.id && "transform rotate-180"}`}
                                         onMouseEnter={() => handleDropdown(item.id)}
                                         aria-label="Toggle submenu"
                                     />
-                                )}
-                                {item?.subMenu && (
+                                )} */}
+                                {/* {item?.subMenu && (
                                     <ul
                                     onMouseLeave={() => handleDropdown(null)}
                                         className={`md:absolute static md:bg-white md:shadow-md bg-black md:text-black text-white transition-all duration-300 ${dropdown === item.id ? 'flex flex-col md:gap-0 gap-5 md:top-20 md:pt-8 md:pb-8 pt-5' : 'hidden'
@@ -54,11 +54,11 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                         ))}
-                                    </ul>)}
+                                    </ul>)} */}
                             </li>
                         ))}
                         <li>
-                            <Link href="#" className='text-base text-white font-semibold bg-primary px-4 py-2.5 rounded inline-flex'>
+                            <Link href="#" className='primaryBtn'>
                                 Donate
                             </Link>
                         </li>
