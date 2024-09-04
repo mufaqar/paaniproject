@@ -31,7 +31,7 @@ const Header = () => {
                     >
                         {NavLinks.map((item, idx) => (
                             <li key={idx} className=''>
-                                <Link href={item?.link || "#"} className='text-xl text-navlink hover:text-primary hover:font-semibold font-normal inline-block items-center gap-1.5 relative transition-all duration-300'>
+                                <Link href={item?.link || "#"} className='text-xl text-navlink hover:text-primary font-normal inline-block items-center gap-1.5 relative transition-all duration-300'>
                                     {item?.title}
                                 </Link>
                                 {/* {item?.subMenu && (

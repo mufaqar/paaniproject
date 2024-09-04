@@ -44,7 +44,7 @@ const Counter = ({ value, title, icon }: { value: string; title: string; icon: s
         height={91}
         className="mx-auto w-[71px] h-[91px] object-contain"
       />
-      <h2 className="md:text-[50px] md:leading-normal text-3xl font-bold text-primary text-center mb-4">
+      <h2 className="md:text-[40px] md:leading-[50px] text-3xl font-bold text-white text-center px-3">
         {formattedCount}
       </h2>
       <p className="text-lg font-bold text-white text-center">{title}</p>

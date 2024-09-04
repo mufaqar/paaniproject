@@ -7,7 +7,7 @@ export const NavLinks = [
     {
         id: 2,
         title: "About Us",
-        link: "#",
+        link: "/about-us",
         subMenu: [
             {
                 title: "Meet The Team",

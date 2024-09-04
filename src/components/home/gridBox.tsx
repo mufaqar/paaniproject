@@ -7,16 +7,16 @@ const GridBox = ({ title, img, subtitle, content, btnTxt, link, Cstm_class }: an
         <div className={`flex flex-col items-center ${Cstm_class}`}>
             <div className='md:w-1/2 w-full'>
                 <div className='md:p-10 max-w-[470px]'>
-                    <p className='text-sm font-bold text-white mb-3'>
+                    <p className='text-lg font-bold text-primary mb-3'>
                         {subtitle}
                     </p>
-                    <h2 className="md:text-[26px] md:leading-normal text-2xl font-bold text-white">
+                    <h2 className="md:text-5xl text-3xl font-bold text-primary mt-5">
                         {title}
                     </h2>
-                    <p className='text-sm font-normal text-white my-5'>
+                    <p className='text-lg font-normal text-primary my-5'>
                         {content}
                     </p>
-                    <Link href={link} className='text-base text-white font-semibold bg-primary px-4 py-2.5 rounded inline-flex'>
+                    <Link href={link} className='primaryBtn inline-flex'>
                         {btnTxt}
                     </Link>
                 </div>
