@@ -1,13 +1,9 @@
 import Banner from "@/components/home/banner";
 import Counter from "@/components/home/counter";
 import GridBox from "@/components/home/gridBox";
-import ReportBox from "@/components/home/reportBox";
 import Image from "next/image";
 import Link from "next/link";
 import { ReliefData } from '@/const/relief'
-import Countdown from "@/components/mission/countdown";
-import FaqBox from "@/components/home/faqBox";
-import { FaqsData } from '@/const/faqs'
 import Cta from "@/components/home/cta";
 
 export default function Home() {
