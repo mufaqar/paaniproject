@@ -4,9 +4,9 @@ import React from 'react'
 
 const GridBox = ({ title, img, subtitle, content, btnTxt, link, Cstm_class }: any) => {
     return (
-        <div className={`flex flex-col items-stretch ${Cstm_class}`}>
+        <div className={`flex flex-col items-stretch md:gap-0 gap-10 ${Cstm_class}`}>
             <div className='md:w-1/2 w-full'>
-                <div className='md:p-10 max-w-[470px]'>
+                <div className='md:p-10 py-5 max-w-[470px]'>
                     <p className='text-lg font-bold text-primary mb-3'>
                         {subtitle}
                     </p>

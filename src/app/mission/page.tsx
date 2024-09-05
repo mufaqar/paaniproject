@@ -12,8 +12,8 @@ export default function Mission() {
                 title="Paani’s Mission"
                 content="Our mission is to not only provide temporary relief where we can, but to work toward building permanent solutions against the most complex problems that countries like Pakistan are facing. We strive to combine evidence-based initiatives with cultural competency to ensure that community members feel comfortableand empowered in our presence."
                 video="https://www.youtube.com/embed/sffISGgvyPc?si=t4jy68_Mq1NRqaOA" />
-            <section className="py-8">
-                <div className="container mx-auto px-4 bg-white md:py-20 py-16 rounded-[100px]">
+            <section className="py-8 md:px-0 px-4">
+                <div className="container mx-auto px-4 bg-white md:py-20 py-16 rounded-[50px] md:rounded-[100px]">
                     <div className="max-w-[920px] mx-auto">
                         <h2 className="md:text-5xl text-3xl font-bold text-primary text-center">
                             Our Story
@@ -33,8 +33,8 @@ export default function Mission() {
                     </div>
                 </div>
             </section>
-            <section className="py-8">
-                <div className="container mx-auto px-4 bg-navlink md:py-20 py-16 rounded-[100px]">
+            <section className="py-8 md:px-0 px-4">
+                <div className="container mx-auto px-4 bg-navlink md:py-20 py-16 rounded-[50px] md:rounded-[100px]">
                     <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 items-start justify-between">
                         <div className="max-w-[410px]">
                             <h2 className="md:text-5xl text-3xl font-bold text-white mt-5">
@@ -52,8 +52,8 @@ export default function Mission() {
                     </div>
                 </div>
             </section>
-            <section className="py-8">
-                <div className="container mx-auto px-4 bg-secondryBg md:py-20 py-16 rounded-[100px]">
+            <section className="py-8 md:px-0 px-4">
+                <div className="container mx-auto px-4 bg-secondryBg md:py-20 py-16 rounded-[50px] md:rounded-[100px]">
                     <div className="max-w-[920px] mx-auto">
                         <h2 className="md:text-5xl text-3xl font-bold text-primary text-center">
                             Our Main Focus

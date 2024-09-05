@@ -36,7 +36,7 @@ const Countdown = () => {
   }, [targetDate]);
 
   return (
-    <ul className='w-full flex items-center justify-between'>
+    <ul className='w-full flex md:flex-row flex-col gap-5 items-center justify-between'>
       <li className='md:text-[40px] md:leading-[50px] text-3xl font-bold text-white text-center px-3'>
         {timeLeft.days}
         <p className='text-[22px] leading-[28px] mt-1.5 text-center'>Day(s)</p>

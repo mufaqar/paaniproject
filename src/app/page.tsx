@@ -14,9 +14,9 @@ export default function Home() {
         title="Paani Project"
         content="A global nonprofit fueled by young volunteers to supply clean water & foster empowerment across Pakistan."
         video="https://www.youtube.com/embed/8pvSZ_JSUhM" />
-      <section className="py-8">
-        <div className="container mx-auto px-4 bg-white md:py-20 py-16 rounded-[100px]">
-          <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 items-center justify-between">
+      <section className="py-8 md:px-0 px-4">
+        <div className="container mx-auto px-4 bg-white md:py-20 py-16 rounded-[50px] md:rounded-[100px]">
+          <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 md:items-center justify-between">
             <div className="max-w-[410px]">
               <h3 className="subTitle">
                 Our Philosophy
@@ -40,9 +40,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-8">
-        <div className="container mx-auto px-4 bg-secondryBg md:py-20 py-16 rounded-[100px]">
-          <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 items-center justify-between">
+      <section className="py-8 md:px-0 px-4">
+        <div className="container mx-auto px-4 bg-secondryBg md:py-20 py-16 rounded-[50px] md:rounded-[100px]">
+          <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 md:items-center justify-between">
             <div className="max-w-[410px]">
               <h3 className="subTitle">
                 OUR IMPACT
@@ -74,8 +74,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-8">
-        <div className="container mx-auto px-4 bg-navlink md:py-20 py-16 rounded-[100px]">
+      <section className="py-8 md:px-0 px-4">
+        <div className="container mx-auto px-4 bg-navlink md:py-20 py-16 rounded-[50px] md:rounded-[100px]">
           <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 items-start justify-between">
             <div className="max-w-[410px]">
               <h2 className="md:text-5xl text-3xl font-bold text-white mt-5">
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-8">
+      <section className="py-8 md:px-0 px-4">
         <GridBox
           img="/images/smiling.webp"
           subtitle="MAKE A DIFFERENCE"

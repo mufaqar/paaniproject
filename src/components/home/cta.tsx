@@ -3,10 +3,10 @@ import React from 'react'
 
 const Cta = () => {
     return (
-        <section className={`md:py-20 py-16`}>
-            <div className="container mx-auto px-4 bg-navlink md:py-20 py-16 rounded-[100px]">
+        <section className={`md:py-20 py-16 md:px-0 px-4`}>
+            <div className="container mx-auto px-4 bg-navlink md:py-20 py-16 rounded-[50px] md:rounded-[100px]">
                 <div className="max-w-[920px] mx-auto text-center flex md:flex-col flex-col gap-5 items-center">
-                    <h2 className="md:text-[64px] md:leading-[80px] text-5xl font-bold text-white max-w-[730px]">
+                    <h2 className="md:text-[64px] md:leading-[80px] text-4xl font-bold text-white max-w-[730px]">
                         The Ripple Effect Starts with You
 
                     </h2>
