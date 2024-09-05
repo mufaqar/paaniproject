@@ -2,23 +2,24 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const GridBox = ({ title, img, subtitle, content, btnTxt, link, Cstm_class }: any) => {
+const GridBox = ({ title, img, subtitle, content, btnTxt, link }: any) => {
     return (
-        <div className={`flex flex-col items-stretch md:gap-0 gap-10 ${Cstm_class}`}>
+        <div className={`flex flex-col items-stretch md:gap-0 gap-10`}>
             <div className='md:w-1/2 w-full'>
-                <div className='md:p-10 py-5 max-w-[470px]'>
-                    <p className='text-lg font-bold text-primary mb-3'>
+                <div className='md:p-10 py-5'>
+                    {subtitle && <p className='text-lg font-bold text-primary mb-3'>
                         {subtitle}
-                    </p>
-                    <h2 className="md:text-5xl text-3xl font-bold text-primary mt-5">
+                    </p>}
+                    {title && <h2 className="md:text-5xl text-3xl font-bold text-primary mt-5">
                         {title}
-                    </h2>
-                    <p className='text-lg font-normal text-primary my-5'>
+                    </h2>}
+                    {content && <p className='text-lg font-normal text-primary my-5'>
                         {content}
-                    </p>
-                    <Link href={link} className='primaryBtn inline-flex'>
+                    </p>}
+                    {link && <Link href={link} className='primaryBtn inline-flex'>
                         {btnTxt}
                     </Link>
+                    }
                 </div>
             </div>
             <div className='md:w-1/2 w-full'>

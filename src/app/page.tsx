@@ -100,24 +100,24 @@ export default function Home() {
         </div>
       </section>
       <section className="py-8 md:px-0 px-4">
-        <GridBox
-          img="/images/smiling.webp"
-          subtitle="MAKE A DIFFERENCE"
-          title="Start Your Own Campaign"
-          content="Want to launch your own fundraising campaign for a clean water well in honor of a loved one or simply to give back? Start fundraising now through Launchgood and leave a lasting impact on underserved communities in Pakistan."
-          btnTxt="Launch Campaign"
-          link="#"
-          Cstm_class="md:flex-row"
-        />
-        <GridBox
-          img="/images/truck.webp"
-          subtitle="CORPORATE MATCH GIVING"
-          title="2x Your Donation"
-          content="Did you know that your employer can match your donation? Use our search engine and see if your employer will double your generous donation without any added expense on you."
-          btnTxt="Get Matched"
-          link="#"
-          Cstm_class="md:flex-row-reverse"
-        />
+        <div className="flex flex-col [&>*:nth-child(odd)]:md:flex-row [&>*:nth-child(even)]:md:flex-row-reverse">
+          <GridBox
+            img="/images/smiling.webp"
+            subtitle="MAKE A DIFFERENCE"
+            title="Start Your Own Campaign"
+            content="Want to launch your own fundraising campaign for a clean water well in honor of a loved one or simply to give back? Start fundraising now through Launchgood and leave a lasting impact on underserved communities in Pakistan."
+            btnTxt="Launch Campaign"
+            link="#"
+          />
+          <GridBox
+            img="/images/truck.webp"
+            subtitle="CORPORATE MATCH GIVING"
+            title="2x Your Donation"
+            content="Did you know that your employer can match your donation? Use our search engine and see if your employer will double your generous donation without any added expense on you."
+            btnTxt="Get Matched"
+            link="#"
+          />
+        </div>
       </section>
       <Cta />
     </main>

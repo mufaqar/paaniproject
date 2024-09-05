@@ -15,7 +15,7 @@ export const NavLinks = [
             },
             {
                 title: "Zakaat",
-                link: "#",
+                link: "/zakaat",
             },
             {
                 title: "FAQ",
@@ -23,7 +23,7 @@ export const NavLinks = [
             },
             {
                 title: "UN Sustainability Goals",
-                link: "#",
+                link: "/sdg",
             },
         ],
     },
