@@ -6,11 +6,14 @@ const TeamBox = ({ data }: any) => {
     return (
         <div>
             <div>
-                <Image src={data?.img} alt='pic' width={474} height={474} className='mx-auto' />
+                <Image src={data?.img} alt='pic' width={474} height={474} className='mx-auto rounded-2xl' />
             </div>
-            <Link href="#" className='text-base font-bold text-white text-center flex w-fit mx-auto mt-5'>
+            <h3 className="md:text-[22px] md:leading-[28px] text-xl font-bold text-primary mt-5">
                 {data?.name}
-            </Link>
+            </h3>
+            <p className="text-lg font-normal text-primary mt-1">
+                {data?.position}
+            </p>
         </div>
     )
 }
