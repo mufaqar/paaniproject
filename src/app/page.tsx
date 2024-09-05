@@ -76,7 +76,7 @@ export default function Home() {
       </section>
       <section className="py-8">
         <div className="container mx-auto px-4 bg-navlink md:py-20 py-16 rounded-[100px]">
-          <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 items-center justify-between">
+          <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 items-start justify-between">
             <div className="max-w-[410px]">
               <h2 className="md:text-5xl text-3xl font-bold text-white mt-5">
                 2024 Eid al-Adha
@@ -91,7 +91,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="max-w-[920px] mx-auto md:mt-16 mt-9 grid md:grid-cols-4 grid-cols-1 md:gap-12 gap-5">
+          <div className="max-w-[920px] mx-auto md:mt-16 mt-9 grid md:grid-cols-4 grid-cols-1 md:gap-8 gap-5">
             <Counter value={"20,204"} title={"Wells Built"} icon={"/images/well.webp"} />
             <Counter value={"2.5"} title={"Million Meals Provided"} icon={"/images/meal.webp"} />
             <Counter value={"5"} title={"Active Projects"} icon={"/images/globe.webp"} />
