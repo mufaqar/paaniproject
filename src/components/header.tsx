@@ -34,14 +34,14 @@ const Header = () => {
                                 <Link href={item?.link || "#"} className='text-xl text-navlink hover:text-primary font-normal inline-block items-center gap-1.5 relative transition-all duration-300'>
                                     {item?.title}
                                 </Link>
-                                {/* {item?.subMenu && (
+                                {item?.subMenu && (
                                     <FaChevronDown
-                                        className={`text-white cursor-pointer inline ml-1.5 ${dropdown === item.id && "transform rotate-180"}`}
+                                        className={`text-navlink cursor-pointer inline ml-1.5 ${dropdown === item.id && "transform rotate-180"}`}
                                         onMouseEnter={() => handleDropdown(item.id)}
                                         aria-label="Toggle submenu"
                                     />
-                                )} */}
-                                {/* {item?.subMenu && (
+                                )}
+                                {item?.subMenu && (
                                     <ul
                                     onMouseLeave={() => handleDropdown(null)}
                                         className={`md:absolute static md:bg-white md:shadow-md bg-black md:text-black text-white transition-all duration-300 ${dropdown === item.id ? 'flex flex-col md:gap-0 gap-5 md:top-20 md:pt-8 md:pb-8 pt-5' : 'hidden'
@@ -54,7 +54,7 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                         ))}
-                                    </ul>)} */}
+                                    </ul>)}
                             </li>
                         ))}
                         <li>

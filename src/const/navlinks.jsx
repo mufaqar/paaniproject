@@ -19,7 +19,7 @@ export const NavLinks = [
             },
             {
                 title: "FAQ",
-                link: "#",
+                link: "/faqs",
             },
             {
                 title: "UN Sustainability Goals",
