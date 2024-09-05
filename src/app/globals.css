@@ -27,7 +27,7 @@ body {
 }
 
 .secondryBtn {
-  @apply text-lg text-primary font-semibold bg-transparent hover:bg-primary hover:text-white border-2 border-primary px-[60px] py-4 rounded-full transition-all duration-300;
+  @apply text-lg text-white font-semibold bg-transparent hover:bg-primary hover:text-white border-2 border-white hover:border-primary px-[60px] py-4 rounded-full transition-all duration-300;
 }
 
 .subTitle {

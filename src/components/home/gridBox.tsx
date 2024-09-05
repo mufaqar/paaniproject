@@ -4,7 +4,7 @@ import React from 'react'
 
 const GridBox = ({ title, img, subtitle, content, btnTxt, link, Cstm_class }: any) => {
     return (
-        <div className={`flex flex-col items-center ${Cstm_class}`}>
+        <div className={`flex flex-col items-stretch ${Cstm_class}`}>
             <div className='md:w-1/2 w-full'>
                 <div className='md:p-10 max-w-[470px]'>
                     <p className='text-lg font-bold text-primary mb-3'>
@@ -22,7 +22,7 @@ const GridBox = ({ title, img, subtitle, content, btnTxt, link, Cstm_class }: an
                 </div>
             </div>
             <div className='md:w-1/2 w-full'>
-                <Image src={img} alt="img" width={1024} height={682} />
+                <Image src={img} alt="img" width={1024} height={682} className='object-cover w-full h-full' />
             </div>
         </div>
     )

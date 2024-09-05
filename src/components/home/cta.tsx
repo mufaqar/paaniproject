@@ -14,7 +14,7 @@ const Cta = () => {
                         As we fight Pakistan’s water crisis, let us utilize our resources to maximize the positive impact we can have on impoverished and underserved communities. Take the first step today with the Paani Project.
                     </p>
                     <div className='flex md:flex-row flex-col gap-6 md:mt-12 mt-8'>
-                        <Link href="#" className='primaryBtn'>
+                        <Link href="#" className='primaryBtn hover:!border-white hover:!text-white'>
                             Volunteer
                         </Link>
                         <Link href="#" className='secondryBtn'>
