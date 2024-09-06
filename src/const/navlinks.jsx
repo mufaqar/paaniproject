@@ -38,7 +38,7 @@ export const NavLinks = [
             },
             {
                 title: "Paani In The News",
-                link: "#",
+                link: "/media",
             },
             {
                 title: "Ramadan 2024",
