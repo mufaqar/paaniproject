@@ -42,7 +42,7 @@ export const NavLinks = [
             },
             {
                 title: "Ramadan 2024",
-                link: "#",
+                link: "/ramadan-2024",
             },
             {
                 title: "Established Projects",
