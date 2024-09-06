@@ -27,6 +27,7 @@ export default function Zakaat() {
                 <div className="flex flex-col [&>*:nth-child(odd)]:md:flex-row [&>*:nth-child(even)]:md:flex-row-reverse [&>*:nth-child(even)]:bg-white">
                     {PostsData?.map((item, idx) => {
                         return <GridBox
+                        key={idx}
                             img={item?.img}
                             title={item?.title}
                             content={item?.content}
