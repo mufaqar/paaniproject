@@ -66,7 +66,7 @@ export default function Home() {
                 <div className="rounded-xl">
                   <Image src={item?.img} alt="img" width={1236} height={594} className="w-full h-full object-cover rounded-xl" />
                 </div>
-                <Link href={item?.link} className="text-lg font-normal text-primary underline hover:no-underline transition-all duration-300">
+                <Link href={item?.link} className="text-lg font-normal text-primary underline hover:no-underline transition-all duration-300 inline-block w-fit">
                   Download
                 </Link>
               </div>

@@ -1,24 +1,12 @@
+import PageBanner from '@/components/page-banner'
 import React from 'react'
 
 export default function SDG() {
     return (
         <main>
-            <section className="md:py-20 py-10">
-                <div className="container max-w-[920px] mx-auto px-4">
-                    <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 md:items-start justify-between">
-                        <div className="max-w-[410px]">
-                            <h2 className="md:text-5xl text-3xl font-bold text-primary">
-                                SDG-6
-                            </h2>
-                        </div>
-                        <div className="max-w-[410px]">
-                            <p className="text-lg font-normal text-primary">
-                                Water is essential for life, but millions of people around the world lack access to clean and safe water.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <PageBanner
+                title="SDG-6"
+                content="Water is essential for life, but millions of people around the world lack access to clean and safe water." />
             <section className="py-8 md:px-0 px-4">
                 <div className="container mx-auto px-4 bg-white md:py-20 py-16 rounded-[50px] md:rounded-[100px]">
                     <div className="max-w-[920px] mx-auto">

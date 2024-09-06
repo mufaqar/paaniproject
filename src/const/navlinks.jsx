@@ -34,7 +34,7 @@ export const NavLinks = [
         subMenu: [
             {
                 title: "Paani Blog",
-                link: "#",
+                link: "/paani-blog",
             },
             {
                 title: "Paani In The News",

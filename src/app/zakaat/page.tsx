@@ -1,33 +1,19 @@
 import GridBox from '@/components/home/gridBox'
+import PageBanner from '@/components/page-banner'
 import React from 'react'
 
 export default function Zakaat() {
     return (
         <main>
-            <section className="md:py-20 py-10">
-                <div className="container max-w-[920px] mx-auto px-4">
-                    <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 md:items-start justify-between">
-                        <div className="max-w-[410px]">
-                            <h3 className="subTitle">
-                                Join Paani this Ramadan
-                            </h3>
-                            <h2 className="md:text-5xl text-3xl font-bold text-primary mt-5">
-                                Zakaat
-                            </h2>
-                        </div>
-                        <div className="max-w-[410px]">
-                            <p className="text-lg font-normal text-primary">
-                                Paani is a non-profit organization dedicated to supplying clean water, food, health supplies, education, and sanitization facilities among deserving people. This Ramzan, your zakat, and sadaqah donations can help us share food and provide clean water for the hungry and needy. So join us in this holy month to move forward in our mission to make a difference in society.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <PageBanner
+                subtitle="Join Paani this Ramadan"
+                title="Zakaat"
+                content="Paani is a non-profit organization dedicated to supplying clean water, food, health supplies, education, and sanitization facilities among deserving people. This Ramzan, your zakat, and sadaqah donations can help us share food and provide clean water for the hungry and needy. So join us in this holy month to move forward in our mission to make a difference in society." />
             <section className="py-8 md:px-0 px-4">
                 <div className="flex flex-col [&>*:nth-child(odd)]:md:flex-row [&>*:nth-child(even)]:md:flex-row-reverse [&>*:nth-child(even)]:bg-white">
                     {PostsData?.map((item, idx) => {
                         return <GridBox
-                        key={idx}
+                            key={idx}
                             img={item?.img}
                             title={item?.title}
                             content={item?.content}

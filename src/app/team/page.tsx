@@ -1,25 +1,17 @@
 import TeamBox from '@/components/team/teamBox'
 import React from 'react'
 import { TeamData } from '@/const/team'
+import PageBanner from '@/components/page-banner'
 
 export default function Team() {
     return (
         <main>
-            <section className="md:py-20 py-16">
+            <PageBanner
+                title="Meet the Team"
+                content="Our work would be impossible without the dedicated volunteers who work tirelessly to make our vision of a world without water scarcity a reality." />
+            <section className="py-8">
                 <div className="container mx-auto px-4 ">
-                    <div className="max-w-[920px] mx-auto flex md:flex-row flex-col md:gap-12 gap-5 md:items-start justify-between">
-                        <div className="max-w-[410px]">
-                            <h2 className="md:text-5xl text-3xl font-bold text-primary ">
-                                Meet the Team
-                            </h2>
-                        </div>
-                        <div className="max-w-[410px]">
-                            <p className="text-lg font-normal text-primary">
-                                Our work would be impossible without the dedicated volunteers who work tirelessly to make our vision of a world without water scarcity a reality.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="max-w-[920px] mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-16 gap-5 md:mt-16 mt-9">
+                    <div className="max-w-[920px] mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-16 gap-5">
                         {TeamData?.map((item, idx) => (
                             <TeamBox key={idx} data={item} />
                         ))}
